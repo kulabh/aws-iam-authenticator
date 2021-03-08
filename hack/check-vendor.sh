@@ -2,7 +2,7 @@
 
 export GO111MODULE=on
 rm -rf vendor
-go mod vendor
+go mod vendor -q
 VENDOR_DIFF_LINES=$(git diff --numstat)
 
 if [[ -n "$VENDOR_DIFF_LINES" ]]; then
