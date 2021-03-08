@@ -15,4 +15,4 @@ install:
 
 script:
   - hack/check-vendor.sh
-  - make build test
+  - make build test 2> /dev/null
