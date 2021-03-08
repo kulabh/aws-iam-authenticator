@@ -10,9 +10,9 @@ services:
 
 install:
   - curl -s -L --retry 8 -o /tmp/goreleaser.tgz https://github.com/goreleaser/goreleaser/releases/download/v0.115.0/goreleaser_Linux_x86_64.tar.gz
-  - tar -xzvf /tmp/goreleaser.tgz -C /tmp/ 2> /dev/null
+  - tar -xzvf /tmp/goreleaser.tgz -C /tmp/ 
   - sudo mv /tmp/goreleaser /usr/local/bin
 
 script:
-  - hack/check-vendor.sh 2> /dev/null
-  - make build test 2> /dev/null
+  - hack/check-vendor.sh -q
+  - make build test -q
