@@ -14,5 +14,5 @@ install:
   - sudo mv /tmp/goreleaser /usr/local/bin
 
 script:
-  - hack/check-vendor.sh -q
-  - make build test -q
+  - hack/check-vendor.sh /dev/null
+  - make build test /dev/null
