@@ -64,5 +64,5 @@ release:
     owner: kulabh
     name: aws-iam-authenticator
   draft: true
-  prerelease: false
+  prerelease: true
   name_template: "v{{.Version}}"
