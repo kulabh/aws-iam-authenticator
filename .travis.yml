@@ -13,6 +13,6 @@ install:
   - tar -xzvf /tmp/goreleaser.tgz -C /tmp/ 
   - sudo mv /tmp/goreleaser /usr/local/bin
 
-script:
-  - hack/check-vendor.sh /dev/null
-  - make build test /dev/null
+#script:
+ # - hack/check-vendor.sh /dev/null
+  #- make build test /dev/null
